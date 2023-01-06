@@ -22,6 +22,6 @@ pub struct RequestCreateUser {
     username: String,
     email: String,
     password: String,
-    car_details: String,
-    bank_details: String
+    car_details: Option<String>,
+    bank_details: Option<String>
 }

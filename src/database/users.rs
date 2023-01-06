@@ -11,8 +11,8 @@ pub struct Model {
     pub username: String,
     pub password: String,
     pub email: String,
-    pub car_details: String,
-    pub bank_details: String,
+    pub car_details: Option<String>,
+    pub bank_details: Option<String>,
     #[sea_orm(column_type = "Text", nullable)]
     pub token: Option<String>,
 }
